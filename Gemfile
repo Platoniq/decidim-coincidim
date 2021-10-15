@@ -9,7 +9,7 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "custom-fields"
+gem "decidim-decidim_awesome", "~> 0.7.2"
 gem "decidim-notify", "~> 0.4.0"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
 
