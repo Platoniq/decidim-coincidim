@@ -32,13 +32,13 @@
 
 # Ignore public uploads
 public/uploads
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-.ebextensions/*authorized_keys.config
 .rbenv-vars
 .rspec-failures
 
 spec/decidim_dummy_app/*
 .vscode
+
+config/deploy
+config/deploy.rb
+config/application.yml
+Capfile
