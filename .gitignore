@@ -42,3 +42,6 @@ config/deploy
 config/deploy.rb
 config/application.yml
 Capfile
+
+/public/packs
+/public/packs-test

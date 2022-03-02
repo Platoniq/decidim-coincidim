@@ -3,20 +3,18 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim.git", branch: "release/0.24-stable" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim.git", branch: "release/0.25-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", "~> 0.7.2"
-gem "decidim-notify", "~> 0.4.0"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer"
+gem "decidim-decidim_awesome"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify", branch: "main"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
 
-gem "bootsnap", "~> 1.4"
+gem "bootsnap", "~> 1.7"
 gem "health_check"
-gem "sentry-rails"
-gem "sentry-ruby"
 
 gem "puma", ">= 5.0.0"
 gem "uglifier", "~> 4.1"
@@ -49,7 +47,9 @@ end
 
 group :production do
   gem "figaro", "~> 1.2"
-  gem "fog-aws"
+  gem "sentry-rails"
+  gem "sentry-ruby"
+  gem "sentry-sidekiq"
   gem "sidekiq", "~> 6.0"
   gem "sidekiq-cron"
 end
