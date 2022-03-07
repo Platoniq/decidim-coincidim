@@ -11,7 +11,7 @@ base_path = File.expand_path("..", __dir__)
 # method to register the stylesheet import for the main application. This would
 # include an SCSS file at `app/packs/stylesheets/your_app_extensions.scss` into
 # the Decidim's main SCSS file.
-Decidim::Webpacker.register_stylesheet_import("stylesheets/coincidim")
+Decidim::Webpacker.register_stylesheet_import("stylesheets/coincidim/*")
 
 # If you want to do the same but include the SCSS file for the admin panel's
 # main SCSS file, you can use the following method.
