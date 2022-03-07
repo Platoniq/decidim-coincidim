@@ -47,4 +47,4 @@ Capfile
 
 /public/packs
 /public/packs-test
-/packages
+/public/decidim-packs
