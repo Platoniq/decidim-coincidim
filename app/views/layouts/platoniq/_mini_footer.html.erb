@@ -3,9 +3,9 @@
   <div class="row">
     <div class="column">
       <div class="project-logos">
-          <%= image_tag("coincidim/logo-platoniq.png", alt: "Platoniq Logo" ) %>
-          <%= image_tag("coincidim/logo-esf.png", alt: "Platoniq Logo" ) %>
-          <%= image_tag("coincidim/logo-bcn-activa.png", alt: "Barcelona activa Logo" ) %>
+          <%= image_pack_tag("media/images/logo-platoniq.png", alt: "Platoniq Logo" ) %>
+          <%= image_pack_tag("media/images/logo-esf.png", alt: "Platoniq Logo" ) %>
+          <%= image_pack_tag("media/images/logo-bcn-activa.png", alt: "Barcelona activa Logo" ) %>
       </div>
     </div>
   </div>
@@ -14,7 +14,7 @@
       <a rel="license" class="cc-badge"
          href="http://creativecommons.org/licenses/by-sa/4.0/"
          target="_blank" rel="noopener">
-        <%= image_tag("decidim/cc-badge.png", alt: "Creative Commons License" ) %>
+        <%= image_pack_tag("media/images/cc-badge.png", alt: "Creative Commons License" ) %>
       </a>
       <%= t("platoniq.layouts.footer.made_by_platoniq").html_safe %>
     </div>
@@ -22,7 +22,7 @@
       <% if current_organization.official_img_footer? %>
         <div class="decidim-logo">
         <%= link_to  current_organization.official_url do %>
-          <%= image_tag current_organization.official_img_footer.url.to_s , alt: current_organization.name %>
+          <%= image_pack_tag current_organization.official_img_footer.url.to_s , alt: current_organization.name %>
         <% end %>
       </div>
       <% end %>
@@ -30,7 +30,7 @@
         <a rel="decidim"
            href="https://decidim.org/"
            target="_blank">
-          <%= image_tag("decidim/decidim-logo.svg", alt: "Decidim Logo" ) %>
+          <%= image_pack_tag("media/images/decidim-logo.svg", alt: "Decidim Logo" ) %>
         </a>
       </div>
     </div>

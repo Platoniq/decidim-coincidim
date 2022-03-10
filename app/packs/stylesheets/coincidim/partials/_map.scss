@@ -1,0 +1,8 @@
+/* Custom map size */
+.google-map {
+  height: 480px;
+
+  @include breakpoint(mediumlarge up){
+    height: 720px;
+  }
+}
