@@ -3,12 +3,12 @@ name: Test
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 env:
-  RUBY_VERSION: 2.7.2
-  NODE_VERSION: 12.9.1
+  RUBY_VERSION: 2.7.5
+  NODE_VERSION: 16.9.1
     
 jobs:
   test:
@@ -36,16 +36,16 @@ jobs:
           bundler-cache: true
 
       - name: Setup & create Database
-        run: |
-          bundle exec rake decidim:generate_external_test_app
-          bundle exec rails db:create db:schema:load
+        run: bundle exec rails db:create db:schema:load
         env:
           RAILS_ENV: test
           DATABASE_USERNAME: postgres
           DATABASE_PASSWORD: postgres
 
       - name: Precompile assets
-        run: bundle exec rake assets:precompile
+        run: |
+          yarn install
+          bundle exec rake assets:precompile
         env:
           RAILS_ENV: test
 

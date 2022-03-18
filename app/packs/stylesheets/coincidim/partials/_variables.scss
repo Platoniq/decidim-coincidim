@@ -1,0 +1,42 @@
+// Variables
+
+$primary: #ff5964 !default;
+$primary-rgb: 255,89,100 !default;
+$secondary: #45c1ed !default;
+$secondary-rgb: 69,193,237 !default;
+$success: #90cf36 !default;
+$success-rgb: 144,207,54 !default;
+$warning: #fc9f5b !default;
+$warning-rgb: 252,159,91 !default;
+$alert: #d7263d !default;
+$alert-rgb: 215,38,61 !default;
+
+$proposals: #45c1ed !default;
+$actions: #90cf36 !default;
+$debates: #ff5964 !default;
+$meetings: #fc9f5b !default;
+
+$twitter: #55acee !default;
+$facebook: #3b5998 !default;
+$google: #4285f4 !default;
+
+// background colors used in public diff views
+$color-addition: #e6ffed !default;
+$color-removal: #ffeef0 !default;
+
+// Define custom properties as css color variables
+$gradient-start: #09aee9;
+$gradient-end: #2bf597;
+$body-font-color: #494949;
+$body-background-color: #f7fff7;
+$main-footer-bg: $gradient-start;
+$card-link: #599aa6;
+
+// Custom vars
+$title-bar-bg: #fff;
+$link-color: #003640;
+$link-color: #16444c;
+$navbar-fg: $title-bar-bg;
+$navbar-fg-hover: $link-color;
+$navbar-bg: #f1f1f1;
+$wave-size: 20px;
